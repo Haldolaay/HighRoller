@@ -19,7 +19,8 @@ init();
 //document.querySelector('#current-'+ activePlayer).innerHTML= '<em>'+dice+'</em>';
 //var x = document.querySelector('#score-'+activePlayer).textContent;
 
-
+//query selecters are not best practice
+// FIXME: change this code to jquey
 document.querySelector('.btn-roll').addEventListener('click',function(){
     if(gamePlaying){
   var  dice = Math.ceil(Math.random()*6);
